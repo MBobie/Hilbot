@@ -1,0 +1,26 @@
+
+---
+
+## Model Description
+
+Hilbot follows a **dual-input architecture**:
+
+1. **TF-IDF Branch**
+   - Captures sparse lexical patterns
+   - Effective for keyword-driven classification
+
+2. **Embedding + CNN Branch**
+   - Uses pre-trained GloVe embeddings
+   - Captures contextual semantic features
+
+3. **Late Fusion Layer**
+   - Combines both representations for final classification
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/MBobie/Hilbot.git
+cd Hilbot
+pip install -r requirements.txt
