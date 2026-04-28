@@ -1,26 +1,33 @@
-# Dual-Input CNN for Enhanced Intent Classification in automated dialogue systems
+# Hilbot: A Data-Centric Framework for Financial Intent Classification
 
-## Introduction
-This repository houses the training code for a Dual-Input Convolutional Neural Network (CNN) aimed at enhancing intent classification within financial conversational AI systems. The model leverages the semantic understanding capabilities of GloVe embeddings alongside the discriminative features extracted through TF-IDF vectorization.
+## Overview
+This repository contains the dataset and implementation supporting the paper:
 
-## Model Overview
-The Dual-Input CNN architecture merges the strengths of traditional NLP techniques with the latest advancements in deep learning to interpret and classify complex financial queries accurately. This approach ensures a nuanced comprehension of user intents, essential for automated financial advice systems.
+**"When Simpler Models Win: A Data-Centric Evaluation of Financial Intent Classification under Low-Resource Conditions."**
 
-## Repository Contents
-- `train.py`: The main training script for the Dual-Input CNN model.
-- `requirements.txt`: List of Python dependencies required to run the training code.
-- `config/`: Configuration files defining model parameters and training settings.
-- `utils/`: Utility scripts for data preprocessing and model evaluation.
+The project introduces **Hilbot**, a dual-input hybrid framework that combines:
+- **TF-IDF (lexical features)** for discriminative precision
+- **GloVe embeddings + CNN** for semantic representation
 
-## Getting Started
-To get started with training your Dual-Input CNN model:
-1. Clone this repository.
-2. Install the required dependencies: `pip install -r requirements.txt`
-3. Run the training script: `python train.py`
+The study evaluates classical, neural, and hybrid models under **low-resource and imbalanced conditions**, demonstrating that **simpler models can outperform complex architectures when data is limited**.
 
-## Contributing
-Contributions to the project are welcome! Please refer to the CONTRIBUTING.md for guidelines.
+---
 
+## Dataset
 
-## Contact
-For queries or collaboration offers, feel free to contact me at [manuelamankwatia@gmail.com]
+The dataset consists of **1,386 samples across 33 financial intent classes**, constructed from heterogeneous sources:
+
+- **JSON data (`data.json`)**  
+  Conversational financial queries representing real-world user intents  
+
+- **CSV data (`HilData.csv`)**  
+  Structured financial records converted into natural language queries  
+
+### Key Characteristics
+- Highly **imbalanced class distribution**
+- Combination of **structured and unstructured data**
+- Designed to simulate **real-world financial NLP conditions**
+
+---
+
+## Repository Structure
